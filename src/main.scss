@@ -1,0 +1,11 @@
+/*importer les fichiers scss des pages en faisant
+@import depuis le dossier scss 
+*/
+*{
+    outline: 1px solid red;
+}
+
+@import url(scss_folder/other/reset.scss);
+@import url(scss_folder/other/font.scss);
+@import url(scss_folder/layout/header.scss);
+@import url(scss_folder/layout/footer.scss)

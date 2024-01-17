@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'magnum';
+    src: url('magnum.woff2') format('woff2'),
+        url('magnum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
