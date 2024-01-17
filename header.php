@@ -15,15 +15,16 @@
       $logolink = get_field('logo_link','options');
 
 
-      ?>
-        <p> <?php echo $slogan ?></p>
-        <div class="menu-container">
-          <?php wp_nav_menu(array('menu' => 'menu')); ?>
-          <a href="<?php echo($logolink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/header/voloco.png" alt="logo"></a>
-          <?php wp_nav_menu(array('menu' => 'menusecondaire')); ?>
-        </div>
-          <a href="https://www.etsy.com/shop/LaFabriquedeGigi">Ma Boutique</a>
-        
+      ?><div class="menu">
+          <p> <?php echo $slogan ?></p>
+          <div class="menu-container">
+            
+            <?php wp_nav_menu(array('menu' => 'menu')); ?>
+            <a href="<?php echo($logolink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/header/voloco.png" alt="logo"></a>
+            <?php wp_nav_menu(array('menu' => 'menusecondaire')); ?>
+          </div>
+            <a href="https://www.etsy.com/shop/LaFabriquedeGigi">Ma Boutique</a>
+        </div>  
         <?php 
         //var_dump($logo);?>
        
