@@ -33,12 +33,17 @@
             ?>
              
             <div class="link_pictures">   
-                <a href="<?php echo ($leftpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/bijoumarche.jpg" alt="Bijoux"></a>
-               
-                <a href="<?php echo ($rightpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/photoprincipalecouture.jpg" alt="Couture"></a>
+                <div class = "pictures">
+                    <a href="<?php echo ($leftpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/bijoumarche.jpg" alt="Bijoux"></a>
+                    
+                    <a href="<?php echo ($rightpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/photoprincipalecouture.jpg" alt="Couture"></a>
+                </div>
+                <div class = "link-text">
+                    <h1><?php echo $titlepic?></h1>
+                    <p class="subtitle"><?php echo $subtitlepic?></p>
+                </div>
             </div>
-            <h1><?php echo $titlepic?></h1>
-            <p class="subtitle"><?php echo $subtitlepic?></p>
+            
             <h3><?php echo $titlearticle ?></h3>
             <a href="<?php echo($readmorebutton['url'])?>"><?php echo ($readmorebutton['title']) ?></a>
             <div class="story-galery">

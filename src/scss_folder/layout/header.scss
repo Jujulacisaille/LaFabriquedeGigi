@@ -2,10 +2,10 @@ header{
     background-color: #94AE94;
     .menu{
         display: flex;
-        
+        justify-content: center;
         .menu-container{
-            margin-left: 35px;
-            width:1000px;
+            
+           
             justify-content: center;
             align-items: center;
             display:flex;
@@ -38,7 +38,7 @@ header{
                     width:333px;
                     margin-right: 76px;
                     li:first-child{
-                        margin-right: 13%;
+                        margin-right: 14%;
                         width:170px;
                         padding-right: 30px;
                         border-right: solid 2px white;
@@ -68,8 +68,8 @@ header{
             font-family:'magnum';
             color: white;
             font-size: 1.563rem;
-            top:20px;
-            left:6%;
+            top:30px;
+            left:2%;
             height: 50px;
             width: 225px;
         }

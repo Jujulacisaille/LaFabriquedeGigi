@@ -4,27 +4,41 @@ main{
     }
     h1{
         position: relative;
-        z-index: 2  ;
+       
         font-size: 6.25rem;
         font-family: 'magnum';
-        top: -400px;
-        left: 455px;
+        
         color: white;
         width: 700px;
     }
     .subtitle{
         position: relative;
-        z-index: 2;
+        
         font-family: 'magnum';
-        top: -370px;
-        left: 400px;
+        
+
         color: white;
         font-size: 3.75rem;
         width: 800px;
     }
     .link_pictures{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        .link-text{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .pictures{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
     }
     h3{
         font-family: 'magnum';
