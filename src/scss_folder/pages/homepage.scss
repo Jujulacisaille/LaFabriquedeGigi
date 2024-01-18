@@ -61,7 +61,7 @@ main{
                     font-size: 3.75rem;
                     text-align: center;
                     margin-top: -120px;
-                    margin-bottom: 3%;
+                    margin-bottom: 5%;
                 }
                 h3+a{
                     text-decoration: none;
@@ -75,19 +75,22 @@ main{
                 }
             } 
             .story-galery{
-                
+                margin-top: 5%;
+                margin-bottom: 5%;
                 display:flex;
-                justify-content: center;
+                width:1300px;
                 
                 
                 .story{
                     margin: 3%;
+                    
                     h3{
                         font-size: 3rem;
-
+                        
                     }
                     .story-description{
                         margin-top: 10%;
+                        margin-bottom: 10%;
                         font-family: 'Roboto';
                         font-size: 18px;
                         color:#302E2E;
@@ -96,9 +99,20 @@ main{
                             margin-top: 4%;
                         }
                     }
+                    a{
+                    text-decoration: none;
+                    color: white;
+                    
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    background-color: #9D4C32;
+                    padding: 10px;
+                    border-radius: 20px;
+                    }
                 }
                 .galery{
                     margin: 3%;
+                    
                 }
             }  
         .wrap{
@@ -115,17 +129,27 @@ main{
                     display: flex;
                     #jewel{
                         position: relative;
-                        top:50px;
-                        left: -150px;
+                        top:90px;
+                        left: -160px;
                         z-index:-1;
                     }
                 }
                 .upper-category{
                     display: flex;
+                    margin-bottom: 10%;
+                    width: 600px;
+                    
+                    justify-content: space-between;
                     .picture-link{
                         display: flex;
                         flex-direction: column;
                         text-align: center;
+                       
+                        justify-content: space-between;
+                        img{
+                            border-radius: 50%;
+                            margin-bottom: 10%;
+                        }
                         a{
                             text-decoration: none;
                             color:#9D4C32;
@@ -137,10 +161,16 @@ main{
                 .lower-category{
                     display:flex;
                     justify-content: center;
+                    margin-left: 10%;
                     .picture-link{
+                        margin-right: 13%;
                         display: flex;
                         flex-direction: column;
                         text-align: center;
+                        img{
+                            margin-bottom: 10%;
+                            border-radius: 50%;
+                        }
                         a{
                             text-decoration: none;
                             color:#9D4C32;

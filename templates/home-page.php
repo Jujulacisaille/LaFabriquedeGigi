@@ -92,7 +92,11 @@
                                     
                                 ?>
                                     <div class="picture-link">
-                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
+                                        
+                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['mini-thumbnail'])?>" 
+                                            width="<?php echo($piccategory['sizes']['mini-thumbnail-width'])?>"
+                                            height="<?php echo($piccategory['sizes']['mini-thumbnail-height'])?>"
+                                            alt="<?php echo($piccategory['alt'])?>">
                                         <a href="<?php echo($linkcategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
                                     </div>
                                 <?php endwhile; 
@@ -142,7 +146,9 @@
                                     
                                 ?>
                                     <div class="picture-link">
-                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
+                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" 
+                                            width="<?php echo($piccategory['sizes']['medium_large'])?>"
+                                            alt="<?php echo($piccategory['alt'])?>">
                                         <a href="<?php echo($linkategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
                                     </div>
                                 <?php endwhile; 

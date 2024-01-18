@@ -40,4 +40,4 @@ function d($args){
   p($args);
   die();
 }
-add_image_size('mini-thumbnail',145,145);
+add_image_size('mini-thumbnail',145 ,145 ,false);
