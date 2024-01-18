@@ -1,0 +1,40 @@
+main{
+    a{
+        font-family: 'Roboto';
+    }
+    h1{
+        position: relative;
+        z-index: 2  ;
+        font-size: 6.25rem;
+        font-family: 'magnum';
+        top: -400px;
+        left: 455px;
+        color: white;
+        width: 700px;
+    }
+    .subtitle{
+        position: relative;
+        z-index: 2;
+        font-family: 'magnum';
+        top: -370px;
+        left: 400px;
+        color: white;
+        font-size: 3.75rem;
+        width: 800px;
+    }
+    .link_pictures{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        font-family: 'magnum';
+        color:#9D4C32;
+    }
+    p+h3{
+        font-size: 3.75rem;
+        text-align: center;
+        margin-top: -120px;
+    }
+
+    
+}

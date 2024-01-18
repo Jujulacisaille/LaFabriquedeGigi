@@ -31,12 +31,14 @@
             $galery = get_field('pictures_galery');
 
             ?>
+             
             <div class="link_pictures">   
-            <a href="<?php echo ($leftpiclink['url'])?>"><?php echo ($leftpiclink['title'])?></a>
-                <h1> <?php echo $titlepic ?></h1>
-                <h2><?php echo $subtitlepic ?></h2>
-                <a href="<?php echo ($rightpiclink['url'])?>"><?php echo ($rightpiclink['title'])?></a>
+                <a href="<?php echo ($leftpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/bijoumarche.jpg" alt="Bijoux"></a>
+               
+                <a href="<?php echo ($rightpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/photoprincipalecouture.jpg" alt="Couture"></a>
             </div>
+            <h1><?php echo $titlepic?></h1>
+            <p class="subtitle"><?php echo $subtitlepic?></p>
             <h3><?php echo $titlearticle ?></h3>
             <a href="<?php echo($readmorebutton['url'])?>"><?php echo ($readmorebutton['title']) ?></a>
             <div class="story-galery">
