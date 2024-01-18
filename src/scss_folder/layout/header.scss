@@ -4,7 +4,7 @@ header{
         display: flex;
         
         .menu-container{
-            margin-left: px;
+            margin-left: 35px;
             width:1000px;
             justify-content: center;
             align-items: center;
@@ -38,9 +38,9 @@ header{
                     width:333px;
                     margin-right: 76px;
                     li:first-child{
-                        margin-right: 0px;
+                        margin-right: 13%;
                         width:170px;
-                        padding-right: 35px;
+                        padding-right: 30px;
                         border-right: solid 2px white;
                         
                     }
@@ -55,7 +55,8 @@ header{
                     }
                     li:first-child{
                         width:100px;
-                        padding-right: 30px;
+                        margin-right: 13%;
+                        padding-right: 40px;
                         border-right: solid 2px white;
                     }
 
@@ -63,13 +64,14 @@ header{
             }
         }
         p{
+            position: relative;
             font-family:'magnum';
             color: white;
             font-size: 1.563rem;
-            padding-top: 2%;
-            padding-left: 2%;
+            top:20px;
+            left:6%;
             height: 50px;
-            width: 235px;
+            width: 225px;
         }
         img{
             border-radius: 50%;
@@ -80,8 +82,9 @@ header{
             color: #7DA77D;
             font-family: 'Roboto';
             font-size: 1.125rem;
+            font-weight: bold;
             margin-top: 1.5%;
-            margin-right:5%;
+            margin-left:3%;
             background-color: white;
             height: 30px;
             width:140px;
