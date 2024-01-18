@@ -19,8 +19,8 @@
 
             //récupération des champs ACF
 
-            $leftpiclink = get_field('left_picture_link');
-            $rightpiclink =  get_field('right_picture_link');
+            
+            
             $titlepic = get_field('title_picture');
             $subtitlepic = get_field('subtitle_picture');
             $titlearticle = get_field('title_article');
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation-1.svg" alt="motif de séparation">
+        
         <section>
             <?php 
                 $jwlrypic=get_field('jewellery_picture');
@@ -71,12 +71,12 @@
                 
                
             ?>
-            
+            <div class="wrap">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation-1.svg" alt="motif de séparation">
                 <div class="jewellery">
                     <div class="jewellery_picture">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante3.svg" alt="motif de plante">
-                        <img loading="lazy" src="<?php echo($jwlrypic['sizes']['medium_large'])?>" alt="<?php echo($jwlrypic['alt'])?>">
-                        <a href="<?php echo($jwlrylink['url'])?>"><?php echo($jwlrylink['title'])?></a>
+                        <a href="<?php echo($jwlrylink['url'])?>"><img loading="lazy" src="<?php echo($jwlrypic['sizes']['medium_large'])?>" alt="<?php echo($jwlrypic['alt'])?>"></a>
+                        <img id="jewel" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante3.svg" alt="motif de plante">
                     </div>
                     <div class="jewellery-category">
                         <div class="upper-category">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </section>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation2.svg" alt="motif de séparation">
         <section>

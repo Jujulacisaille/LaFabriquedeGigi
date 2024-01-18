@@ -1,100 +1,155 @@
 main{
-    
-        a{
-            font-family: 'Roboto';
-        }
-        
-        
-        .link_pictures{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .link-text{
-                position: relative;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            a{
+                font-family: 'Roboto';
+            }
+            
+            
+            .link_pictures{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                top:-400px;
-                h1{
+                .link-text{
                     position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    top:-400px;
+                    h1{
+                        position: relative;
+                    
+                        font-size: 6.25rem;
+                        font-family: 'magnum';
+                        margin-bottom: 3%;
+                        color: white;
+                        width: 630px;
+                    }
+                    .subtitle{
+                        position: relative;
+                        
+                        font-family: 'magnum';
+                        
+                        
+                        color: white;
+                        font-size: 3.75rem;
+                        width: 800px;
+                    }
+                }
+                .pictures{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
                 
-                    font-size: 6.25rem;
-                    font-family: 'magnum';
-                    margin-bottom: 3%;
-                    color: white;
-                    width: 630px;
-                }
-                .subtitle{
-                    position: relative;
-                    
-                    font-family: 'magnum';
-                    
-                    
-                    color: white;
-                    font-size: 3.75rem;
-                    width: 800px;
-                }
             }
-            .pictures{
+            h3{
+                font-family: 'magnum';
+                color:#9D4C32;
+            }
+            .article{  
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-            }
-            
-        }
-        h3{
-            font-family: 'magnum';
-            color:#9D4C32;
-        }
-        .article{  
+                .title-article{
+                    font-size: 3.75rem;
+                    text-align: center;
+                    margin-top: -120px;
+                    margin-bottom: 3%;
+                }
+                h3+a{
+                    text-decoration: none;
+                    color: white;
+                    
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    background-color: #9D4C32;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+            } 
+            .story-galery{
+                
+                display:flex;
+                justify-content: center;
+                
+                
+                .story{
+                    margin: 3%;
+                    h3{
+                        font-size: 3rem;
+
+                    }
+                    .story-description{
+                        margin-top: 10%;
+                        font-family: 'Roboto';
+                        font-size: 18px;
+                        color:#302E2E;
+                        opacity: 85%;
+                        p{
+                            margin-top: 4%;
+                        }
+                    }
+                }
+                .galery{
+                    margin: 3%;
+                }
+            }  
+        .wrap{
+            width:1440px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .title-article{
-                font-size: 3.75rem;
-                text-align: center;
-                margin-top: -120px;
-                margin-bottom: 3%;
-            }
-            h3+a{
-                text-decoration: none;
-                color: white;
-                
-                font-size: 1.125rem;
-                font-weight: bold;
-                background-color: #9D4C32;
-                padding: 10px;
-                border-radius: 20px;
-            }
-        } 
-        .story-galery{
-            
-            display:flex;
             justify-content: center;
             
-            
-            .story{
-                margin: 3%;
-                h3{
-                    font-size: 3rem;
-
+            .jewellery{
+                display: flex;
+                margin-top: 2%;
+                .jewellery_picture{
+                    
+                    display: flex;
+                    #jewel{
+                        position: relative;
+                        top:50px;
+                        left: -150px;
+                        z-index:-1;
+                    }
                 }
-                .story-description{
-                    margin-top: 10%;
-                    font-family: 'Roboto';
-                    font-size: 18px;
-                    color:#302E2E;
-                    opacity: 85%;
-                    p{
-                        margin-top: 4%;
+                .upper-category{
+                    display: flex;
+                    .picture-link{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color:#9D4C32;
+                            font-size:1.25rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .lower-category{
+                    display:flex;
+                    justify-content: center;
+                    .picture-link{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color:#9D4C32;
+                            font-size:1.25rem;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
-            .galery{
-                margin: 3%;
-            }
-        }     
+        }
+    }   
 }
