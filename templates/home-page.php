@@ -43,34 +43,22 @@
                     <p class="subtitle"><?php echo $subtitlepic?></p>
                 </div>
             </div>
-            
-            <h3><?php echo $titlearticle ?></h3>
-            <a href="<?php echo($readmorebutton['url'])?>"><?php echo ($readmorebutton['title']) ?></a>
+            <div class="article">
+                <h3 class="title-article"><?php echo $titlearticle ?></h3>
+                <a href="<?php echo($readmorebutton['url'])?>"><?php echo ($readmorebutton['title']) ?></a>
+            </div>
             <div class="story-galery">
                 <div class="story">
                     <h3><?php echo $storytitle?></h3>
                     <div class="story-description">
                         <?php echo($storydescription) ?>
                     </div>
-                    <?php //d($abtmebutton)?>
+                    
                     <a href="<?php echo($abtmelink['url'])?>"><?php echo ($abtmelink['title'])?></a>
 
                 </div>
                 <div class="galery">
-                <?php if( $galery ): ?>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante1.svg" alt="motif de plante">
-                    <ul>
-                        <?php foreach( $galery as $image ): ?>
-                            <li>
-                                <a href="<?php echo esc_url($image['url']); ?>">
-                                    <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                                </a>
-                                <p><?php echo esc_html($image['caption']); ?></p>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante2.svg" alt="motif de plante">
-                <?php endif; ?>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/galerie.png" alt="galerie de photo">
                 </div>
             </div>
         </section>
@@ -78,62 +66,64 @@
         <section>
             <?php 
                 $jwlrypic=get_field('jewellery_picture');
-                //d($jwlrypic);
+                
                 $jwlrylink = get_field('jewellery_link');
                 
                
             ?>
-            <div class="jewellery">
-                <div class="jewellery_picture">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante3.svg" alt="motif de plante">
-                    <img loading="lazy" src="<?php echo($jwlrypic['sizes']['medium_large'])?>" alt="<?php echo($jwlrypic['alt'])?>">
-                    <a href="<?php echo($jwlrylink['url'])?>"><?php echo($jwlrylink['title'])?></a>
-                </div>
-                <div class="jewellery-category">
-                    <div class="upper-category">
-                    <?php
-                        if( have_rows('upper_picture_and_link_jewellery') ): ?>
-                            
-                           
-                            <?php while( have_rows('upper_picture_and_link_jewellery') ) : the_row();
-                        
-                                
-                                $piccategory = get_sub_field('picture');
-                                $linkcategory = get_sub_field('link');
-                                
-                            ?>
-                                <div class="picture-link">
-                                    <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
-                                    <a href="<?php echo($linkcategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
-                                </div>
-                            <?php endwhile; 
-                        endif;?>
-                        
-                       
-                    
+            
+                <div class="jewellery">
+                    <div class="jewellery_picture">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante3.svg" alt="motif de plante">
+                        <img loading="lazy" src="<?php echo($jwlrypic['sizes']['medium_large'])?>" alt="<?php echo($jwlrypic['alt'])?>">
+                        <a href="<?php echo($jwlrylink['url'])?>"><?php echo($jwlrylink['title'])?></a>
                     </div>
-                    
-                    <div class="lower-category">
-                    <?php
-                        if( have_rows('lower_picture_and_link_jewellery') ): ?>
+                    <div class="jewellery-category">
+                        <div class="upper-category">
+                        <?php
+                            if( have_rows('upper_picture_and_link_jewellery') ): ?>
+                                
                             
-                           
-                            <?php while( have_rows('lower_picture_and_link_jewellery') ) : the_row();
+                                <?php while( have_rows('upper_picture_and_link_jewellery') ) : the_row();
+                            
+                                    
+                                    $piccategory = get_sub_field('picture');
+                                    $linkcategory = get_sub_field('link');
+                                    
+                                ?>
+                                    <div class="picture-link">
+                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
+                                        <a href="<?php echo($linkcategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
+                                    </div>
+                                <?php endwhile; 
+                            endif;?>
+                            
                         
+                        
+                        </div>
+                        
+                        <div class="lower-category">
+                        <?php
+                            if( have_rows('lower_picture_and_link_jewellery') ): ?>
                                 
-                                $piccategory = get_sub_field('picture');
-                                $linkcategory = get_sub_field('link');
-                                
-                            ?>
-                                <div class="picture-link">
-                                    <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
-                                    <a href="<?php echo($linkategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
-                                </div>
-                            <?php endwhile; 
-                        endif;?>
+                            
+                                <?php while( have_rows('lower_picture_and_link_jewellery') ) : the_row();
+                            
+                                    
+                                    $piccategory = get_sub_field('picture');
+                                    $linkcategory = get_sub_field('link');
+                                    
+                                ?>
+                                    <div class="picture-link">
+                                        <img loading="lazy" src="<?php echo($piccategory['sizes']['medium_large'])?>" alt="<?php echo($piccategory['alt'])?>">
+                                        <a href="<?php echo($linkategory['url'])?>"><?php echo ($linkcategory['title'])?></a>
+                                    </div>
+                                <?php endwhile; 
+                            endif;?>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation2.svg" alt="motif de séparation">
         <section>
