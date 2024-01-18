@@ -129,8 +129,9 @@
                 </div>
             </div>
         </section>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation2.svg" alt="motif de séparation">
+       
         <section>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation2.svg" alt="motif de séparation">
             <div class="sewing">
                 <div class="sewing-category">
                     <div class="upper-category">

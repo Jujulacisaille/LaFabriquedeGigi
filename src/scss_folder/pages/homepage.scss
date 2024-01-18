@@ -123,7 +123,8 @@ main{
             
             .jewellery{
                 display: flex;
-                margin-top: 2%;
+                margin-top: 5%;
+                margin-bottom: 5%;
                 .jewellery_picture{
                     
                     display: flex;
@@ -180,6 +181,10 @@ main{
                     }
                 }
             }
+            
+        }
+        .sewing{
+            display: flex;
         }
     }   
 }
