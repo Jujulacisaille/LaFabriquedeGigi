@@ -2,22 +2,96 @@ footer{
     background-color: #94AE94;
     color : white;
     display: flex;
-    justify-content: space-between;
-    .media{
-        p:nth-child(1){
-            font-family: 'magnum';
+    justify-content: center;
+    
+    .wrap{
+        display: flex;
+        width: 1440px;
+        justify-content: space-between;
+        
+        align-items: center;
+        .media{
+        display: flex;
+        flex-direction: column;
+            p{
+                text-align: center;
+            }
+            img{
+                align-items: center;
+                margin-top: 8%;
+                margin-bottom: 8%;
+            }
+            .logo-link{
+                width:220px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+               
+                a{
+                    margin-right: 15%;
+                }
+            }
+            p:nth-child(1){
+                font-family: 'magnum';
+                font-size: 2.5rem;
+                
+            }
+        
+        }
+        .logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            p{
+                font-family: 'magnum';
+                text-align: center;
+                font-size: 1.875rem;
+                margin-bottom: 10%;
+                margin-top: 3%;
+                
+            }
+            .other-pages{
+                width:200px;
+                img{
+                    margin-left:3%;
+                    margin-right:3%;
+                }
+                a{
+                    font-family: 'magnum';
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                
+                    
+                }
+            }
             
         }
-    
-    }
-    .logo{
-        p{
-            font-family: 'magnum';
+        .contact{
+        display: flex;
+        flex-direction: column;
+            h3{
+                font-family: 'magnum';
+                font-size: 2.5rem;
+            }
+            h3+img{
+                align-items: center;
+                margin-top: 8%;
+                margin-bottom: 8%;
+            }
+            p{
+                font-size: 0.875rem;
+                font-family: 'Roboto';
+                
+            }
+            .phone{
+                display: flex;
+            }
             
         }
-    
     }
-    
 
     
 }

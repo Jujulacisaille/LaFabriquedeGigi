@@ -19,34 +19,40 @@
       $faqlink = get_field('faq_link','options');
 
       ?>
-        
-        <div class="media">
-            <p> <?php echo $mediatext ?></p> 
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/pointillessuivezmoi.svg" alt="motif de séparation">
-            <div class="logo-link">
-                <a href="https://www.instagram.com/la_fabrique_de_gigi/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoinsta.svg" alt="logo instagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=100063619991234&locale=fr_FR"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logofacebook.svg" alt="logo facebook"></a>
-                <a href="https://www.etsy.com/shop/LaFabriquedeGigi"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoetsy.svg" alt="logo etsy"></a>
+        <div class="wrap">
+            <div class="media">
+                <p> <?php echo $mediatext ?></p> 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/pointillessuivezmoi.svg" alt="motif de séparation">
+                <div class="logo-link">
+                    <a href="https://www.instagram.com/la_fabrique_de_gigi/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoinsta.svg" alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063619991234&locale=fr_FR"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logofacebook.svg" alt="logo facebook"></a>
+                    <a href="https://www.etsy.com/shop/LaFabriquedeGigi"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoetsy.svg" alt="logo etsy"></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="<?php echo($logo['sizes']['thumbnail'])?>"
+                alt="<?php echo($logo['alt']) ?>"/>
+                <p><?php echo $logotext ?></p>
+                <div class="other-pages">
+                    <a href="<?php echo($legalmentionlink['url'])?>"><?php echo ($legalmentionlink['title'])?></a>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/rondfooter.svg" alt="motif rond">
+                    <a href="<?php echo($faqlink['url'])?>"><?php echo ($faqlink['title'])?></a>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <h3> <?php echo $contacttext?></h3>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/pointillescontacts.svg" alt="motif de séparation">
+                <div class="phone">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/phone.svg" alt="pictogramme de téléphone">
+                    <p><?php echo $number ?></p>
+                </div>
+                <div class="phone">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/mail.svg" alt="pictogramme d'enveloppe">
+                    <p><?php echo esc_html( antispambot( get_field('email','options' ) ) ); ?></p>
+                </div>
             </div>
         </div>
-        <div class="logo">
-            <img src="<?php echo($logo['sizes']['thumbnail'])?>"
-            alt="<?php echo($logo['alt']) ?>"/>
-            <p><?php echo $logotext ?></p>
-            <div class="other-pages">
-                <a href="<?php echo($legalmentionlink['url'])?>"><?php echo ($legalmentionlink['title'])?></a>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/rondfooter.svg" alt="motif rond">
-                <a href="<?php echo($faqlink['url'])?>"><?php echo ($faqlink['title'])?></a>
-            </div>
-        </div>
-        
-        <div class="contact">
-            <h3> <?php echo $contacttext?></h3>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/pointillescontacts.svg" alt="motif de séparation">
-            <p><?php echo $number ?></p>
-            <p><?php echo esc_html( antispambot( get_field('email','options' ) ) ); ?></p>
-        </div>
-    
         
     </footer>
 </body>
