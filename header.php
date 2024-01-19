@@ -26,25 +26,25 @@
           </div>
             <a href="https://www.etsy.com/shop/LaFabriquedeGigi">Ma Boutique</a>
         </div>  
-        <div class="menu">
-        <?php 
-        foreach($dpdwncategory as $category){
-            echo "<div class='category'>";
-                echo "<a href='" . $category['category_title']['url'] . "'>" . $category['category_title']['title'] . "</a>"; 
-                echo "<div class='links'>";
-                if (is_array($category['sous_categorie'])){
-                  foreach($category['sous_categorie'] as $subcategory ){
-                     echo "<a href='" . $subcategory['subcategory_title']['url'] . "'>" . $subcategory['subcategory_title']['title'] . "</a>"; 
+        <div class="menu-dropdown">
+          <?php 
+          foreach($dpdwncategory as $category){
+              echo "<div class='category'>";
+                  echo "<a href='" . $category['category_title']['url'] . "'>" . $category['category_title']['title'] . "</a>"; 
+                  echo "<div class='links'>";
+                  if (is_array($category['sous_categorie'])){
+                    foreach($category['sous_categorie'] as $subcategory ){
+                      echo "<a href='" . $subcategory['subcategory_title']['url'] . "'>" . $subcategory['subcategory_title']['title'] . "</a>"; 
 
+                    }
                   }
-                }
-                echo "</div>";
-            echo "</div>";
-        }
-        
-        
-        
-        ?>
+                  echo "</div>";
+              echo "</div>";
+          }
+          
+          
+          
+          ?>
        </div>
         
     </header>

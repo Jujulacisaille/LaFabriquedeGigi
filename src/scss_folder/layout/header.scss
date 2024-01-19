@@ -32,6 +32,7 @@ header{
             a{
                 text-decoration: none;
                 color: white;
+                padding-bottom: 2%;
             }
             .menu-menu-container{
                 ul{
@@ -43,6 +44,9 @@ header{
                         padding-right: 30px;
                         border-right: solid 2px white;
                         
+                    }
+                    a:hover{
+                        border-bottom: solid 3px white;
                     }
                 }
             }
@@ -59,7 +63,9 @@ header{
                         padding-right: 40px;
                         border-right: solid 2px white;
                     }
-
+                    a:hover{
+                        border-bottom: solid 3px white;
+                    }
                 }
             }
         }
@@ -95,5 +101,8 @@ header{
             
             
         }
+    }
+    .menu-dropdown{
+        display: none;
     }
 }

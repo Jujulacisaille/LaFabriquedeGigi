@@ -34,9 +34,9 @@
              
             <div class="link_pictures">   
                 <div class = "pictures">
-                    <a href="<?php echo ($leftpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/bijoumarche.jpg" alt="Bijoux"></a>
+                    <a href="#B1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/bijoumarche.jpg" alt="Bijoux"></a>
                     
-                    <a href="<?php echo ($rightpiclink['url'])?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/photoprincipalecouture.jpg" alt="Couture"></a>
+                    <a href="#C1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/photoprincipalecouture.jpg" alt="Couture"></a>
                 </div>
                 <div class = "link-text">
                     <h1><?php echo $titlepic?></h1>
@@ -63,7 +63,7 @@
             </div>
         </section>
         
-        <section>
+        <section id="B1">
             <?php 
                 $jwlrypic=get_field('jewellery_picture');
                 
@@ -130,7 +130,7 @@
             </div>
         </section>
        
-        <section>
+        <section id="C1">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation2.svg" alt="motif de séparation">
             <div class="sewing">
                 <div class="sewing-category">
