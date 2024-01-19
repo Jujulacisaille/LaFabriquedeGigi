@@ -24,7 +24,7 @@
             <a href="<?php echo get_site_url()?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/header/voloco.png" alt="logo"></a>
             <?php wp_nav_menu(array('menu' => 'menusecondaire')); ?>
           </div>
-            <a href="https://www.etsy.com/shop/LaFabriquedeGigi">Ma Boutique</a>
+            <a href="https://www.etsy.com/shop/LaFabriquedeGigi" target="_blank">Ma Boutique</a>
         </div>  
         <div class="menu-dropdown">
           <?php 

@@ -1,9 +1,7 @@
 /*importer les fichiers scss des pages en faisant
 @import depuis le dossier scss 
 */
-*{
-    outline: 1px solid red;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -12,3 +10,4 @@ html{
 @import url(scss_folder/layout/header.scss);
 @import url(scss_folder/layout/footer.scss);
 @import url(scss_folder/pages/homepage.scss);
+@import url(scss_folder/pages/aboutmepage.scss);

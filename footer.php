@@ -24,9 +24,9 @@
                 <p> <?php echo $mediatext ?></p> 
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/pointillessuivezmoi.svg" alt="motif de séparation">
                 <div class="logo-link">
-                    <a href="https://www.instagram.com/la_fabrique_de_gigi/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoinsta.svg" alt="logo instagram"></a>
-                    <a href="https://www.facebook.com/profile.php?id=100063619991234&locale=fr_FR"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logofacebook.svg" alt="logo facebook"></a>
-                    <a href="https://www.etsy.com/shop/LaFabriquedeGigi"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoetsy.svg" alt="logo etsy"></a>
+                    <a href="https://www.instagram.com/la_fabrique_de_gigi/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoinsta.svg" alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063619991234&locale=fr_FR" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logofacebook.svg" alt="logo facebook"></a>
+                    <a href="https://www.etsy.com/shop/LaFabriquedeGigi" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer/logoetsy.svg" alt="logo etsy"></a>
                 </div>
             </div>
             <div class="logo">

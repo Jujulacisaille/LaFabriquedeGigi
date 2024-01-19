@@ -11,7 +11,8 @@
     /*Template Name: Qui suis je */
     get_header(); ?>
     <main>
-        <section>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/motifplante1.svg" alt="motif de plante">
+        <section class="creator">
             <?php 
                 $title = get_field('title');
                 $creatorsubtitle = get_field('creator_subtitle');
@@ -21,8 +22,9 @@
                 
              ?>
             <div class="title">
+            
                 <h1> <?php echo $title?></h1>
-                <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\motifplante1.svg" alt="motif de plante">
+                
             </div>
             <div class="general-story">
                 <div class="story-text">
