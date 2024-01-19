@@ -183,9 +183,10 @@
                 ?>
 
                 <div class="sewing_picture">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante4.svg" alt="motif de plante">
+                    
                     
                     <a href="<?php echo($swnglink['url'])?>"><img loading="lazy" src="<?php echo($swngpic['sizes']['medium_large'])?>" alt="<?php echo($swngpic['alt'])?>"></a>
+                    <img id="sewing" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante4.svg" alt="motif de plante">
                 </div>
                 
             </div>

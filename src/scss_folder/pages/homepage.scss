@@ -126,7 +126,7 @@ main{
                 margin-top: 5%;
                 margin-bottom: 5%;
                 .jewellery_picture{
-                    
+                    max-width: 737px;
                     display: flex;
                     #jewel{
                         position: relative;
@@ -185,6 +185,65 @@ main{
         }
         .sewing{
             display: flex;
+            margin-top: 20%;
+           
+            .upper-category{
+                display: flex;
+                margin-bottom: 10%;
+                width: 600px;
+                
+                justify-content: space-between;
+                .picture-link{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                   
+                    justify-content: space-between;
+                    img{
+                        border-radius: 50%;
+                        margin-bottom: 10%;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:#9D4C32;
+                        font-size:1.25rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .lower-category{
+                display:flex;
+                justify-content: center;
+                margin-left: 10%;
+                .picture-link{
+                    margin-right: 13%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    img{
+                        margin-bottom: 10%;
+                        border-radius: 50%;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:#9D4C32;
+                        font-size:1.25rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .sewing_picture{
+                flex-direction: column;
+                display: flex;
+                max-height: 550px;
+                margin-left: 10%;
+                #sewing{
+                    position: relative;
+                    top:-690px;
+                    left: -10px;
+                    z-index:-1;
+                }
+            }
         }
     }   
 }
