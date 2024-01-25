@@ -1,7 +1,9 @@
 /*importer les fichiers scss des pages en faisant
 @import depuis le dossier scss 
 */
-
+*{
+    outline: 1px solid red;
+}
 html{
     scroll-behavior: smooth;
 }
