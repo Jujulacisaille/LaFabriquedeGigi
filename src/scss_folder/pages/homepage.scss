@@ -128,7 +128,14 @@ main{
                 .jewellery_picture{
                     max-width: 737px;
                     display: flex;
+                    a{
+                        img{
+                            border-radius: 7%;
+                            
+                        }
+                    }
                     #jewel{
+                        
                         position: relative;
                         top:90px;
                         left: -160px;

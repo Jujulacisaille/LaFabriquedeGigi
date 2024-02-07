@@ -75,7 +75,11 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/separation-1.svg" alt="motif de séparation">
                 <div class="jewellery">
                     <div class="jewellery_picture">
-                        <a href="<?php echo($jwlrylink['url'])?>"><img loading="lazy" src="<?php echo($jwlrypic['sizes']['medium_large'])?>" alt="<?php echo($jwlrypic['alt'])?>"></a>
+                        <a href="<?php echo($jwlrylink['url'])?>"><img loading="lazy" 
+                        src="<?php echo($jwlrypic['sizes']['pic-category'])?>" 
+                        width="<?php echo($jwlrypic['sizes']['pic-category-width'])?>" 
+                        height="<?php echo($jwlrypic['sizes']['pic-category-height'])?>" 
+                        alt="<?php echo($jwlrypic['alt'])?>"></a>
                         <img id="jewel" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/home/motifplante3.svg" alt="motif de plante">
                     </div>
                     <div class="jewellery-category">

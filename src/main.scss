@@ -11,3 +11,7 @@ html{
 @import url(scss_folder/layout/footer.scss);
 @import url(scss_folder/pages/homepage.scss);
 @import url(scss_folder/pages/aboutmepage.scss);
+
+*{
+    outline: 1px solid red;
+}
