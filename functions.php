@@ -41,3 +41,4 @@ function d($args){
   die();
 }
 add_image_size('mini-thumbnail',145 ,145 ,false);
+add_image_size('pic-category',537 ,473 ,false);
