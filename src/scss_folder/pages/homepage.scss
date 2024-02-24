@@ -116,7 +116,7 @@ main{
                 }
             }  
         .wrap{
-            width:1440px;
+            max-width:1440px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -244,6 +244,11 @@ main{
                 display: flex;
                 max-height: 550px;
                 margin-left: 10%;
+                a{
+                    img{
+                    border-radius: 7%;
+                    }
+                }
                 #sewing{
                     position: relative;
                     top:-690px;

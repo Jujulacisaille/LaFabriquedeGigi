@@ -36,7 +36,9 @@
                     
                     <div class="customer_quote">
                     <img loading="lazy" src="<?php echo($creatorpicture['sizes']['medium_large'])?>" alt="<?php echo($creatorpicture['alt'])?>">
-                        <?php echo $customerquote?>
+                        <div class="quote">
+                            <?php echo $customerquote?>
+                        </div>
                     </div>
             </div>
         </section>
@@ -50,13 +52,15 @@
                 $jewellerydesc = get_field('jewellery_description');
                 $deliverylink = get_field('delivery_button');
             ?>
-            <div class="sewing">
+            <div class="sewings">
                 <div class="sewing-picture">
+                  
                     <img loading="lazy" src="<?php echo($sewingpicture['sizes']['medium_large'])?>" alt="<?php echo($sewingpicture['alt'])?>">
-                    <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\motifplante2.svg" alt="motif de plante">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/motifplante2.svg" alt="motif de plante">
+                    
                 </div>
                 <div class="sewing-text">
-                    <h2><?php echo $sewingsubtitle?><h2>
+                    <h2><?php echo $sewingsubtitle?></h2>
                     <div class="sewing-desc">
                         <?php echo $sewingdesc?>
                     </div>

@@ -1,5 +1,5 @@
 .creator{
-    margin-top: -12%;
+    
     .title{
         display: flex;
         h1{
@@ -9,21 +9,99 @@
         }
        
     }
-    h2{
-        font-family: 'magnum';
-        color:#9D4C32;
-    }
-    p{
-        color:#302E2E;
-        font-family: 'Roboto';
-        strong{
-            font-weight: bold;
-        }
-    }
+  
+
     .general-story{
         display: flex;
+        justify-content: center ;
+        width: 90%;
+        margin-top: 5%;
+        .story-text{
+            margin-right: 10%;
+            margin-top: 5%;
+            h2{
+                font-family: 'magnum';
+                color:#9D4C32;
+                font-size: 3rem;
+                margin-bottom: 10%;
+            }
+            p{
+                color:#302E2E;
+                font-family: 'Roboto';
+                font-size: 1.125rem;
+                margin-bottom: 1%;
+                strong{
+                    font-weight: bold;
+                }
+            }
+            p:nth-of-type(3){
+                margin-bottom: 5%;
+            }
+            p:nth-of-type(8){
+                margin-bottom: 5%;
+            }
+        }
         .customer_quote{
+            margin-left: 10%;
+            transform: rotate(7deg);
             display: block;
+            align-items: center;
+            img{
+                padding:4%;
+                border: 1px solid #94AE94;
+            }
+            .quote{
+                margin-left: -5%;
+                padding: 5%;
+                padding-left: 5%;
+                padding-right: 15%;
+                border: 5px solid #94AE94;
+                border-radius:10px ;
+                width:100%;
+                p{
+                    font-family: 'Magnum';
+                    color:#94AE94;
+                    font-size:1.5rem ;
+                    
+                }
+            }
+        }
+    }
+}
+.sewings{    
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    .sewing-picture{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        img:nth-of-type(2){
+            position: relative;
+            top: -70px;
+            left: 30px;
+            z-index:-1;
+            transform: rotate(2deg);
+        }
+    }
+    .sewing-text{
+        margin-left: 13%;
+        margin-top: 5%;
+        h2{
+            font-family: 'magnum';
+            color:#9D4C32;
+            font-size: 3rem;
+            margin-bottom: 5%;
+        }
+        p{
+            color:#302E2E;
+            font-family: 'Roboto';
+            font-size: 1.125rem;
+            margin-bottom: 1%;
+            strong{
+                font-weight: bold;
+            }
         }
     }
 }
