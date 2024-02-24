@@ -7,9 +7,23 @@
             color:#9D4C32;
             font-size: 4.688rem;
         }
-        img{
-            position: relative;
-            left:0;
+       
+    }
+    h2{
+        font-family: 'magnum';
+        color:#9D4C32;
+    }
+    p{
+        color:#302E2E;
+        font-family: 'Roboto';
+        strong{
+            font-weight: bold;
+        }
+    }
+    .general-story{
+        display: flex;
+        .customer_quote{
+            display: block;
         }
     }
 }

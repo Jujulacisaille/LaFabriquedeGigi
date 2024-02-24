@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-    /*Template Name: Qui suis je */
+    /*Template Name: Qui suis je*/
     get_header(); ?>
     <main>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/motifplante1.svg" alt="motif de plante">
@@ -27,16 +27,17 @@
                 
             </div>
             <div class="general-story">
-                <div class="story-text">
-                    <h2><?php echo $creatorsubtitle?><h2>
-                    <div class="creator-description">
-                        <?php echo $creatordesc ?>
+                    <div class="story-text">
+                        <h2><?php echo $creatorsubtitle?></h2>
+                        <div class="creator-description">
+                            <?php echo $creatordesc ?>
+                        </div>
                     </div>
-                </div>
-                <img loading="lazy" src="<?php echo($creatorpicture['sizes']['medium_large'])?>" alt="<?php echo($creatorpicture['alt'])?>">
-                <div class="customer_quote">
-                    <?php echo $customerquote?>
-                </div>
+                    
+                    <div class="customer_quote">
+                    <img loading="lazy" src="<?php echo($creatorpicture['sizes']['medium_large'])?>" alt="<?php echo($creatorpicture['alt'])?>">
+                        <?php echo $customerquote?>
+                    </div>
             </div>
         </section>
         <section>

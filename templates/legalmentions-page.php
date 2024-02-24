@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-    /*Template Name: Qui suis je */
+    /*Template Name: Legal Mentions */
     get_header(); ?>
     <main>
         <section class="legal">
