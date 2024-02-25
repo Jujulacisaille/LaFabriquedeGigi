@@ -14,10 +14,11 @@
     .general-story{
         display: flex;
         justify-content: center ;
+        justify-content: space-between;
         width: 90%;
         margin-top: 5%;
         .story-text{
-            margin-right: 10%;
+            
             margin-top: 5%;
             h2{
                 font-family: 'magnum';
@@ -42,7 +43,7 @@
             }
         }
         .customer_quote{
-            margin-left: 10%;
+            
             transform: rotate(7deg);
             display: block;
             align-items: center;
@@ -71,6 +72,7 @@
 .sewings{    
     width: 90%;
     justify-content: center;
+    justify-content: space-between;
     display: flex;
     margin-top: 5%;
     .sewing-picture{
@@ -86,7 +88,7 @@
         }
     }
     .sewing-text{
-        margin-left: 13%;
+        
         margin-top: 5%;
         h2{
             font-family: 'magnum';
@@ -101,6 +103,99 @@
             margin-bottom: 1%;
             strong{
                 font-weight: bold;
+            }
+        }
+    }
+}
+.jewelleries{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    justify-content: space-between;
+    .jewellery-text{
+        
+    
+        h2{
+                font-family: 'magnum';
+                color:#9D4C32;
+                font-size: 3rem;
+                margin-bottom: 10%;
+        }
+        p{
+            color:#302E2E;
+            font-family: 'Roboto';
+            font-size: 1.125rem;
+            margin-bottom: 1%;
+            strong{
+                font-weight: bold;
+            }
+        }
+    }
+   
+}
+.history{
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-top: 1.5%;
+        margin-left:3%;
+        background-color:#7DA77D;
+        height: 30px;
+        width:140px;
+        padding-top: 0.90%;
+        text-align: center;
+        border:none;
+        border-radius: 20px;  
+        margin-bottom: 5%;  
+    }
+    img:last-of-type{
+        margin-bottom: 5%;
+    }
+}
+.medias{
+    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
+    display: flex;
+    #plant2{
+        position: relative;
+        top:50px
+    }
+    .social-media{
+        width: 30%;
+        h3{
+            
+            font-size: 4.688rem;
+            text-align: center;
+            margin-bottom:25%;
+        }
+        .media-logo{
+            
+            display: flex;
+            justify-content: space-between;
+            .insta-logo{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .fb-logo{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            img{
+                width: 50%;
+                margin-bottom: 10%;
+            
+            }
+            a{
+                color: #9D4C32;
+                font-weight: bold;
+                font-size: 1.125rem;
             }
         }
     }

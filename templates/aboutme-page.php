@@ -42,7 +42,7 @@
                     </div>
             </div>
         </section>
-        <section>
+        <section class="history">
             <?php
                 $sewingpicture = get_field('sewing_picture');
                 $sewingsubtitle = get_field('sewing_subtitle');
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="jewellery">
+            <div class="jewelleries">
                 
                 <div class="jewellery-text">
                     <h2><?php echo $jewellerysubtitle?></h2>
@@ -78,9 +78,10 @@
                     
             </div>
             <a href="<?php echo($deliverylink['url'])?>"><?php echo($deliverylink['title'])?></a>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/separation.svg" alt="motif de séparation">
             
         </section>
-        <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\separation.svg" alt="motif de séparation">
+        
         <section>
             <?php 
                 $mediatext = get_field('media_text');
@@ -88,22 +89,22 @@
                 $fblink = get_field('facebook_link');
             
             ?>
-            <div class="media">
-                <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\motifplante3.svg" alt="motif de plante">
+            <div class="medias">
+                <img id="plant2" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/motifplante3.svg" alt="motif de plante">
                 <div class="social-media">
                     <h3><?php echo $mediatext ?></h3>
                     <div class="media-logo">
                         <div class="insta-logo">
-                            <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\instalogo.svg" alt="logo instagram">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/instalogo.svg" alt="logo instagram">
                             <a href="<?php echo($instalink['url'])?>"><?php echo($instalink['title'])?></a>
                         </div>
                         <div class="fb-logo">
-                            <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\fblogo.svg" alt="logo facebook">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/fblogo.svg" alt="logo facebook">
                             <a href="<?php echo($fblink['url'])?>"><?php echo($fblink['title'])?></a>
                         </div>
                     </div>
                 </div>
-                <img src="wp-content\themes\La-Fabrique-de-Gigi-theme\src\images\about_me\motifplante4.svg" alt="motif de plante">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/about_me/motifplante4.svg" alt="motif de plante">
             </div>
         </section>
     </main>
