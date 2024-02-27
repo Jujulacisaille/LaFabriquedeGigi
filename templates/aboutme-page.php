@@ -35,7 +35,10 @@
                     </div>
                     
                     <div class="customer_quote">
-                    <img loading="lazy" src="<?php echo($creatorpicture['sizes']['medium_large'])?>" alt="<?php echo($creatorpicture['alt'])?>">
+                    <img loading="lazy" src="<?php echo($creatorpicture['sizes']['pic-customer'])?>" 
+                        width="<?php echo($creatorpicture['sizes']['pic-customer-width'])?>"
+                        height="<?php echo($creatorpicture['sizes']['pic-customer-height'])?>"
+                        alt="<?php echo($creatorpicture['alt'])?>">
                         <div class="quote">
                             <?php echo $customerquote?>
                         </div>

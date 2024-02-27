@@ -78,6 +78,29 @@
                                     <?php endwhile; 
                                 endif;?>
                     </div>
+                    <div class="lowcatif">
+                    <?php
+                                if( have_rows('low_category_if') ): ?>
+                                    
+                                
+                                    <?php while( have_rows('low_category_if') ) : the_row();
+                                
+                                        
+                                        $lpcatif = get_sub_field('low_pic_category_if');
+                                        $llcatif = get_sub_field('low_link_category_if');
+                                    
+                                    ?>
+                                        <div class="picture-link">
+                                        
+                                            <img loading="lazy" src="<?php echo($lpcatif['sizes']['mini-thumbnail'])?>" 
+                                                width="<?php echo($lpcatif['sizes']['mini-thumbnail-width'])?>"
+                                                height="<?php echo($lpcatif['sizes']['mini-thumbnail-height'])?>"
+                                                alt="<?php echo($lpcatif['alt'])?>">
+                                            <a href="<?php echo($llcatif['url'])?>"><?php echo ($llcatif['title'])?></a>
+                                        </div>
+                                    <?php endwhile; 
+                                endif;?>
+                    </div>
                 </div>
             </div>                
         </section>
